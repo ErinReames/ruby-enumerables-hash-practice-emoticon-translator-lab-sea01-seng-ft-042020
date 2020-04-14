@@ -39,8 +39,10 @@ def get_japanese_emoticon(path, emoticon)
        return key
      end 
    end 
-     unless emoticon_hash.include?(emoticon)
+     unless emoticons_hash.include?(emoticon)
      return "Sorry, that emoticon was not found"
+   end
+
    end
 
   end
