@@ -22,23 +22,22 @@ def get_japanese_emoticon(path, emoticon)
    emoticons_hash.select do |key, value|
      if emoticon == value[:english]
        return value[:japanese]
+     else 
+       return "Sorry not found"
      end
    end
-   unless emoticons_hash.include?(emoticon)
-     return "Sorry, that emoticon was not found"
-   end
-
-  end		 
+   	 
   
   def get_english_meaning(path, emoticon)
   emoticons_hash = load_library(path)
    emoticons_hash.select do |key, value|
      if emoticon == value[:japanese]
        return key
+     else
+       return "Sorry - not found"
      end
    end
-   unless emoticons_hash.include?(emoticon)
-     return "Sorry, that emoticon was not found"
+   
    end
 
  end 
