@@ -23,11 +23,12 @@ def get_japanese_emoticon(path, emoticon)
      if emoticon == value[:english]
        return value[:japanese]
      end
-   end 
-      unless emoticons_hash.include?(emoticon)
+   end
+   unless emoticons_hash.include?(emoticon)
      return "Sorry, that emoticon was not found"
    end
-     end
+
+  end
   
    	 
   
