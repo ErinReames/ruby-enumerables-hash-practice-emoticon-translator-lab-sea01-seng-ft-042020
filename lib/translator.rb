@@ -27,10 +27,7 @@ def get_japanese_emoticon(path, emoticon)
    unless emoticons_hash.include?(emoticon)
      return "Sorry, that emoticon was not found"
    end
-
   end
-  
-   	 
   
   def get_english_meaning(path, emoticon)
   emoticons_hash = load_library(path)
@@ -42,7 +39,4 @@ def get_japanese_emoticon(path, emoticon)
      unless emoticons_hash.include?(emoticon)
      return "Sorry, that emoticon was not found"
    end
-
-   
-
   end
