@@ -33,11 +33,8 @@ def get_japanese_emoticon(path, emoticon)
    emoticons_hash.select do |key, value|
      if emoticon == value[:japanese]
        return key
-     else
-       return "Sorry - not found"
-     end
-   end
-   
+     unless emoticon_hash.include?(emoticon)
+     return "Sorry, that emoticon was not found"
    end
 
- end 
+  end
